@@ -40,6 +40,15 @@ python eval_deepseek_v2_lite.py \
   --device-map auto \
   --output-json eval_results.json
 ```
+python eval_qwen15_moe_a27b_chat.py \
+    --max-mmlu-samples 100 \
+    --max-wmdp-samples 100 \
+    --max-rwku-samples 100
+
+python eval_mixtral_8x7b_instruct_v0_1.py \
+    --max-mmlu-samples 100 \
+    --max-wmdp-samples 100 \
+    --max-rwku-samples 100
 
 运行结束后，会在当前目录生成 `eval_results.json`，示例结构如下：
 
